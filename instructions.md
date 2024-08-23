@@ -34,4 +34,33 @@ git branch
 to change the branch name from master to main
 git branch -M main
 
-git push -u origin main
+git push -u origin main ------ uploading our project to our main repository main branch /// [-u] the means we are setting it in default
+
+// what is git branch
+suppose you hire two developer to build a new feature in your app. you will create two branches for them to create, after creation you will review the codes before mergeing in the main branch
+
+// create new brancj we already have one branch which is main
+
+git checkout -b feature1
+git checkout -b feature2
+
+now check the branches available
+git branch
+
+// to switched to any branch --- now switching to main branch
+
+git checkout main
+
+git push origin feature1
+
+//to add our files in feature1
+
+git add .
+
+// to commit changes
+
+git commit -m "Added p tag"
+
+// to post the commit
+
+git push origin feature1
